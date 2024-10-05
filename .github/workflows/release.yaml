@@ -1,0 +1,50 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: true
+        description: 'Release tag'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Resources
+        run: |
+            cd src
+            zip -r ../UniverseResources_v${{ github.event.inputs.tag }}.zip *
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zip_file
+          path: UniverseResources_v${{ github.event.inputs.tag }}.zip
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: zip_file
+      
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: UniverseResources_v${{ github.event.inputs.tag }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.event.inputs.tag }}
+          draft: true
+          body: |
+            ### Release ${{ github.event.inputs.tag }}
+            ----
+
+            <!-- Add release notes here -->
+
