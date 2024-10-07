@@ -2,11 +2,6 @@ name: Release
 
 on:
   workflow_dispatch:
-    inputs:
-      tag:
-        type: string
-        required: true
-        description: 'Release tag'
 
 jobs:
   build:
@@ -30,6 +25,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Get latest commit hash
+        id: get_commit_hash
+        run: echo "commit_hash=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - name: Get current date
+        id: get_date
+        run: echo "current_date=$(date +'%y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Create tag
+        run: |
+          git tag ${{ env.current_date }}_${{ env.commit_hash }}
+          git push origin ${{ env.current_date }}_${{ env.commit_hash }}
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
@@ -40,11 +48,6 @@ jobs:
         with:
           artifacts: UniverseResources.zip
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.event.inputs.tag }}
-          draft: true
-          body: |
-            ### Release ${{ github.event.inputs.tag }}
-            ----
-
-            <!-- Add release notes here -->
+          tag: ${{ env.current_date }}_${{ env.commit_hash }}
+          draft: false
 
