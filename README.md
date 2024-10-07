@@ -1,24 +1,20 @@
 # UniverseResourcePack
 
-SpaceServer Universe の武器や料理など独自アイテムを追加するリソースパックです。
+SpaceServer Universe の武器や料理などのオリジナルアイテムを追加するリソースパックです。
 
-## インストール方法
+## 適用方法
 
-### プレイヤー向け
+- サーバーに接続すると自動的にダウンロードされ、適用されます。
+  - サーバー参加時にダウンロード画面が表示されるので 続ける を選択しダウンロードしてください。
+- 何らかの理由によりダウンロード出来ない場合は GitHub から入手して自分で設定することも出来ます。方法は次のとおりです:
+  1. [こちら](https://github.com/SpaceServerUniverse/UniverseResourcePack/releases/latest/download/UniverseResources.zip) をクリックして最新版の UniverseResourcePack をダウンロードします。
+  2. ダウンロードしたファイルを Minecraft の `resourcepacks` フォルダに移動させます。
+  3. Minecraft を起動し、設定からリソースパックを適用します。
+- 開発者へ: UniverseCoreV2 の `docker` フォルダにある Docker Compose を使用すると自動的に UniverseResourcePack が有効になったサーバーが起動します。 サーバーに参加するだけで適用されます。
 
-サーバーに接続すれば自動的にダウンロードされ, 適用されます.
+## 運営・開発者向けドキュメント
 
-適用方法など詳しくは [Minecraft Wiki](https://ja.minecraft.wiki/w/%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%AF_(Java_Edition)) を参照してください.
-
-> [!IMPORTANT]
->
-> リソースパックは GitHub からダウンロードして適用することもできます. これは高度なプレイヤー向けの方法です.
-
-### 開発者向け
-
-[SpaceServerUniverse/UniverseCoreV2](https://github.com/SpaceServerUniverse/UniverseCoreV2) 内の Docker Compose を使用している場合, 自動的にサーバーのリソースパックとして適用されるようになっています.
-
-それ以外の場合は, `UniverseResourcePack.zip` をサーバーの `resourcepacks` フォルダに配置してください.
+アイテムの追加方法やリリース方法は [ドキュメント](./docs/README.md) を確認してください。
 
 ## ライセンス
 
@@ -28,7 +24,3 @@ SpaceServer Universe の武器や料理など独自アイテムを追加する�
 >
 > Q. 他のサーバーのリソースパックとして使用することはできますか?
 > A. ダメ
-
-## 開発者・運営向けドキュメント
-
-新規アイテム追加などの簡単なドキュメントは [こちら]() にあります.
