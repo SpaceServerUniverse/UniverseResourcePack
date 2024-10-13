@@ -1,0 +1,17 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld_rod",
+	"textures": {
+		"layer0": "item/L96A1"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-98, -93, -50],
+			"translation": [-0.25, 1.25, -2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [49.85, -79.79, 82.07],
+			"translation": [-2, 4.25, -1.25]
+		}
+	}
+}
