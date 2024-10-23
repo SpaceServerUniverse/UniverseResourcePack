@@ -39,6 +39,12 @@
                 "custom_model_data": 6
             }, 
             "model": "minecraft:item/m870"
+        },
+        {
+            "predicate": { 
+                "custom_model_data": 7
+            }, 
+            "model": "minecraft:item/m1911"
         }
     ]
 }
