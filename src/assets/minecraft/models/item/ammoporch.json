@@ -3,5 +3,27 @@
 	"parent": "minecraft:item/handheld_rod",
 	"textures": {
 		"layer0": "item/ammoporch"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-178.84, 1.55, 172.01],
+			"translation": [-0.25, 1, 0.75],
+			"scale": [0.4, 0.4, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-178.84, 1.55, 172.01],
+			"translation": [-0.25, 1, 0.75],
+			"scale": [0.4, 0.4, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [-178.84, 1.55, 172.01],
+			"translation": [-0.25, 1, 0.75],
+			"scale": [0.4, 0.4, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-178.84, 1.55, 172.01],
+			"translation": [-0.25, 1, 0.75],
+			"scale": [0.4, 0.4, 1]
+		}
 	}
 }
