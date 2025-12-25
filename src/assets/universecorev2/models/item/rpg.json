@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:item/handheld_rod",
 	"textures": {
-		"layer0": "item/rpg"
+		"layer0": "universecorev2:item/rpg"
 	},
 	"display": {
 		"thirdperson_righthand": {

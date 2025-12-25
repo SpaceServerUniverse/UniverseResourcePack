@@ -1,0 +1,82 @@
+{
+	"model": {
+		"type": "select",
+		"property": "custom_model_data",
+		"index": 0,
+		"fallback": {
+			"type": "empty"
+		},
+		"cases": [
+			{
+				"when": "m134",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/m134"
+				}
+			},
+			{
+				"when": "m870",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/m870"
+				}
+			},
+			{
+				"when": "f2",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/f2"
+				}
+			},
+			{
+				"when": "r4c",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/r4c"
+				}
+			},
+			{
+				"when": "smg11",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/smg11"
+				}
+			},
+			{
+				"when": "rpg",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/rpg"
+				}
+			},
+			{
+				"when": "l96a1",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/l96a1"
+				}
+			},
+			{
+				"when": "m1911",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/m1911"
+				}
+			},
+			{
+				"when": "ammoporch",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/ammoporch"
+				}
+			},
+			{
+				"when": "bullet",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/bullet"
+				}
+			}
+		]
+  	}
+}
