@@ -46,5 +46,11 @@
             }, 
             "model": "minecraft:item/m1911"
         }
+        {
+            "predicate": { 
+                "custom_model_data": 8
+            }, 
+            "model": "minecraft:item/m134"
+        }
     ]
 }
