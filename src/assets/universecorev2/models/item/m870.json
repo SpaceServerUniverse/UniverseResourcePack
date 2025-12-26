@@ -12,6 +12,10 @@
 		"firstperson_righthand": {
 			"rotation": [7.71, -87.58, 44.54],
 			"translation": [-0.75, 2.5, 0.75]
+		},
+		"head": {
+			"rotation": [0, 0, 83],
+			"translation": [0, -17.25, -4.25]
 		}
 	}
 }
