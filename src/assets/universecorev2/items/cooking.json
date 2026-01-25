@@ -1,0 +1,61 @@
+{
+	"model": {
+		"type": "select",
+		"property": "custom_model_data",
+		"index": 0,
+		"fallback": {
+			"type": "empty"
+		},
+		"cases": [
+			{
+				"when": "tomato",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/tomato"
+				}
+			},
+            {
+				"when": "u_carrot",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/u_carrot"
+				}
+			},
+            {
+				"when": "soysauce",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/soysauce"
+				}
+			},
+            {
+				"when": "bell_pepper",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/bell_pepper"
+				}
+			},
+            {
+				"when": "porkchop",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/porkchop"
+				}
+			},
+            {
+				"when": "beef",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/beef"
+				}
+			},
+            {
+				"when": "suger",
+				"model": {
+				"type": "model",
+				"model": "universecorev2:item/suger"
+				}
+			}
+        ]
+    }
+}

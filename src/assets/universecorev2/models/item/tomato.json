@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld_rod",
+	"textures": {
+		"layer0": "universecorev2:item/tomato"
+	}
+}
